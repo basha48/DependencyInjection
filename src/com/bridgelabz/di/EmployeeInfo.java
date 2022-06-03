@@ -1,18 +1,23 @@
 package com.bridgelabz.di;
 
+import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Value;
+
 public class EmployeeInfo {
 	
+	
+	@Value("hareesh")
 	private String empName;
+
+
+
+	
+	@Value("50")
 	private int empAge;
 	
-	public void setEmpName(String empName) {
-		this.empName = empName;
-		
-	}
-	
-	
-	public void setEmpAge(int empAge) {
-		this.empAge = empAge;
+
+	public int getEmpAge() {
+		return empAge;
 	}
 
 
